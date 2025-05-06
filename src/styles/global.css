@@ -1,0 +1,116 @@
+@import 'bulma/css/bulma.min.css';
+
+/* Custom styles to enhance Bulma */
+
+/* Add some spacing to the navbar */
+.navbar {
+  padding: 0.5rem 0;
+}
+
+/* Make sure images in cards maintain aspect ratio */
+.card-image img {
+  object-fit: cover;
+}
+
+/* Custom height for feature boxes */
+.has-height-100 {
+  height: 100%;
+}
+
+/* Pricing card styles */
+.pricing-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.is-primary {
+  border-top: 5px solid var(--primary-color);
+}
+
+.price-tag {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.price-tag .currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.price-tag .period {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features li .icon {
+  margin-right: 0.5rem;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  height: 100%;
+}
+
+/* Footer styles */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.social-icons .icon {
+  margin-right: 1rem;
+}
+
+/* Hero image styles */
+.hero img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some spacing to sections */
+.section {
+  padding: 3rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 5rem 1.5rem;
+  }
+}
+
+/* Custom variables */
+:root {
+  --primary-color: #3273dc;
+}
