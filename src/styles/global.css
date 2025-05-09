@@ -1,6 +1,39 @@
-@import 'bulma/css/bulma.min.css';
+
+@import "bulma";
+
+/* Import the Google Font */
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 /* Custom styles to enhance Bulma */
+:root {
+  --bulma-primary-h: 320;
+  --bulma-primary-s: 44%;
+  --bulma-primary-l: 42%;
+
+  --bulma-family-primary: "Nunito", sans-serif;
+}
+
+.title {
+  --bulma-title-weight: 600;
+}
+
+/* Personalización del tema claro */
+.has-background-white-ter {
+  background-color: #f5f5f5;
+}
+
+.section {
+  background-color: white;
+}
+
+.section:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Asegurar que el contenido principal tenga suficiente padding para el navbar fijo */
+main {
+  padding-top: 1rem;
+}
 
 /* Add some spacing to the navbar */
 .navbar {
@@ -108,9 +141,4 @@
   .section {
     padding: 5rem 1.5rem;
   }
-}
-
-/* Custom variables */
-:root {
-  --primary-color: #3273dc;
 }

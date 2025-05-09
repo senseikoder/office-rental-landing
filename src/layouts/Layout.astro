@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-
 interface Props {
 	title: string;
 }
@@ -9,16 +8,17 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="ModernSpace - Premium Office Rental Service">
+		<meta name="description" content="LatinoSpace - Servicio Premium de Alquiler de Oficinas">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="has-navbar-fixed-top">
 		<slot />
 	</body>
 </html>
+

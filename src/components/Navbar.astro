@@ -1,0 +1,70 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<header class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong class="is-size-4">LatinoSpace</strong>
+            </a>
+            
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">About</a>
+                <a class="navbar-item" href="#features">Features</a>
+                <a class="navbar-item" href="#offices">Offices</a>
+                <a class="navbar-item" href="#pricing">Pricing</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+                <div class="navbar-item">
+                    <a class="button is-primary is-rounded has-text-white" href="#book-tour">
+                        <strong>Book a Tour</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+   // Mobile menu toggle
+   document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      
+      if ($navbarBurgers.length > 0) {
+         $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+               const target = el.dataset.target;
+               const $target = document.getElementById(target);
+               
+               el.classList.toggle('is-active');
+               $target.classList.toggle('is-active');
+            });
+         });
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+               targetElement.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+               });
+            }
+         });
+      });
+   });
+</script>

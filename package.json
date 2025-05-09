@@ -7,12 +7,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build-bulma": "sass --load-path=node_modules src/styles/custom.scss src/styles/global.css"
   },
   "dependencies": {
     "@iconify-json/tabler": "^1.2.17",
     "astro": "^3.6.0",
     "astro-icon": "^1.0.0",
-    "bulma": "^0.9.4"
+    "bulma": "^1.0.4"
+  },
+  "devDependencies": {
+    "sass": "^1.87.0"
   }
 }

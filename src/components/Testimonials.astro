@@ -1,0 +1,118 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="section">
+   <div class="container">
+      <div class="has-text-centered mb-6">
+         <h2 class="title is-2">What Our Clients Say</h2>
+         <p class="subtitle is-5 has-text-grey">Hear from businesses that have found their perfect workspace</p>
+      </div>
+
+      <div class="columns is-multiline">
+         <div class="column is-4-desktop is-6-tablet">
+            <div class="card testimonial-card">
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
+                        <figure class="image is-48x48">
+                           <img class="is-rounded" src="/images/testimonial-1.jpg" alt="Sarah Johnson">
+                        </figure>
+                     </div>
+                     <div class="media-content">
+                        <p class="title is-5">Sarah Johnson</p>
+                        <p class="subtitle is-6">CEO, TechStart</p>
+                     </div>
+                  </div>
+                  <div class="content">
+                     <p>"LatinoSpace has been instrumental in our growth. The flexible terms allowed us to scale our team without worrying about long-term commitments."</p>
+                     <div class="has-text-primary">
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="column is-4-desktop is-6-tablet">
+            <div class="card testimonial-card">
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
+                        <figure class="image is-48x48">
+                           <img class="is-rounded" src="/images/testimonial-2.jpg" alt="David Chen">
+                        </figure>
+                     </div>
+                     <div class="media-content">
+                        <p class="title is-5">David Chen</p>
+                        <p class="subtitle is-6">Founder, DesignHub</p>
+                     </div>
+                  </div>
+                  <div class="content">
+                     <p>"The prime location and professional environment have helped us attract top talent. Our clients are always impressed when they visit our office."</p>
+                     <div class="has-text-primary">
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="column is-4-desktop is-6-tablet">
+            <div class="card testimonial-card">
+               <div class="card-content">
+                  <div class="media">
+                     <div class="media-left">
+                        <figure class="image is-48x48">
+                           <img class="is-rounded" src="/images/testimonial-3.jpg" alt="Emily Rodriguez">
+                        </figure>
+                     </div>
+                     <div class="media-content">
+                        <p class="title is-5">Emily Rodriguez</p>
+                        <p class="subtitle is-6">Director, Global Consulting</p>
+                     </div>
+                  </div>
+                  <div class="content">
+                     <p>"The amenities and support services have exceeded our expectations. It's like having a full office management team without the overhead."</p>
+                     <div class="has-text-primary">
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-filled" />
+                        <Icon name="tabler:star-half-filled" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<style>
+.testimonial-card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.media-left .image {
+    margin-right: 1rem;
+}
+
+.icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+</style>
