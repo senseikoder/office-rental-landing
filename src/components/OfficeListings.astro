@@ -1,5 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
+import Image from 'astro/components/Image.astro';
+import modelOffice1 from '../images/model-office1.webp';
+import modelOffice2 from '../images/model-office2.webp';
 ---
 
 <section id="offices" class="section has-background-light">
@@ -9,12 +12,12 @@ import { Icon } from 'astro-icon/components';
          <p class="subtitle is-5 has-text-grey">Find the perfect office for your business</p>
       </div>
 
-      <div class="columns is-multiline">
+      <div class="columns is-centered">
          <div class="column is-4-desktop is-6-tablet">
             <div class="card">
                <div class="card-image">
                   <figure class="image is-4by3">
-                     <img src="/images/office-1.jpg" alt="Private office with modern furniture">
+                     <Image src={modelOffice1} alt="Private office with modern furniture" />
                   </figure>
                </div>
                <div class="card-content">
@@ -48,7 +51,7 @@ import { Icon } from 'astro-icon/components';
             </div>
          </div>
 
-         <div class="column is-4-desktop is-6-tablet">
+         <!-- <div class="column is-4-desktop is-6-tablet">
             <div class="card">
                <div class="card-image">
                   <figure class="image is-4by3">
@@ -84,13 +87,13 @@ import { Icon } from 'astro-icon/components';
                   <a href="#contact" class="button is-primary is-light is-fullwidth">View Details</a>
                </footer>
             </div>
-         </div>
+         </div> -->
 
          <div class="column is-4-desktop is-6-tablet">
             <div class="card">
                <div class="card-image">
                   <figure class="image is-4by3">
-                     <img src="/images/office-3.jpg" alt="Executive suite with premium furnishings">
+                     <Image src={modelOffice2} alt="Executive suite with premium furnishings" />
                   </figure>
                </div>
                <div class="card-content">
@@ -130,6 +133,8 @@ import { Icon } from 'astro-icon/components';
       </div>
    </div>
 </section>
+
+
 
 <!-- Modal de Galería -->
 <div id="galleryModal" class="modal">
@@ -240,22 +245,22 @@ import { Icon } from 'astro-icon/components';
       modalButtons.forEach(btn => {
          btn.addEventListener('click', (e) => {
             e.preventDefault();
-            modal?.classList.add('is-active');
+            modal.classList.add('is-active');
             document.documentElement.classList.add('is-clipped');
          });
       });
 
       // Cerrar modal
       const closeModal = () => {
-         modal?.classList.remove('is-active');
+         modal.classList.remove('is-active');
          // Esperar a que termine la animación antes de remover is-clipped
          setTimeout(() => {
             document.documentElement.classList.remove('is-clipped');
          }, 200);
       };
 
-      closeBtn?.addEventListener('click', closeModal);
-      modalBg?.addEventListener('click', closeModal);
+      closeBtn.addEventListener('click', closeModal);
+      modalBg.addEventListener('click', closeModal);
 
       // Cambiar imagen principal
       window.changeImage = (src) => {

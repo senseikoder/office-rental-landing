@@ -1,3 +1,7 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
 
 <section id="book-tour" class="section has-background-primary hero">
    <div class="is-overlay has-background-primary" style="opacity: 0.8;"></div>
@@ -6,12 +10,18 @@
          <div class="column is-6 has-text-white">
             <h2 class="title is-2 has-text-white">Ready to transform your workspace?</h2>
             <p class="is-size-5 mb-5">Book a tour today and experience the LatinoSpace difference. Our team will help you find the perfect office solution for your business.</p>
-            <p class="is-size-5 mb-5">No commitment required - just come see what we have to offer.</p>
+            <!-- <p class="is-size-5 mb-5">No commitment required - just come see what we have to offer.</p> -->
          </div>
          <div class="column is-5 is-offset-1">
             <div class="box">
-               <h3 class="title is-4 has-text-centered mb-5">Schedule Your Tour</h3>
-               <form>
+               <h3 class="title is-4 has-text-centered mb-5">Contact Us</h3>
+               <a class="button is-success is-fullwidth is-large has-text-white" href="https://wa.me/+17185051531" target="_blank">
+                  <span class="icon">
+                     <Icon name="tabler:brand-whatsapp" />
+                  </span>
+                  <span>Whatsapp</span>
+               </a>
+               <!-- <form>
                   <div class="field">
                      <label class="label">Name</label>
                      <div class="control">
@@ -59,7 +69,7 @@
                         <button class="button is-primary is-fullwidth is-medium">Book My Tour</button>
                      </div>
                   </div>
-               </form>
+               </form> -->
             </div>
          </div>
       </div>
