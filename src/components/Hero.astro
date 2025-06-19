@@ -1,43 +1,133 @@
+---
+import "@splidejs/splide/css";
+---
 
-<section class="hero is-medium is-primary">
-    <div class="is-overlay has-background-dark" style="opacity: 0.4;"></div>
-    <div class="hero-body ">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-6">
-                    <h1 class="title is-2 has-text-white">
-                        Your Perfect Office Space Awaits
-                    </h1>
-                    <h2 class="subtitle is-4 mt-3 mb-5 has-text-white">
-                        Flexible, modern workspaces designed for productivity and collaboration.
-                    </h2>
-                    <div class="buttons">
-                        <a href="tel:+17185051531" class="button is-white is-rounded is-large" target="_blank">
-                            <strong>Book Now</strong>
-                        </a>
-                        <!-- <a href="https://wa.me/+17185051531" target="_blank" class="button is-success is-light is-rounded is-large">
-                            <strong>WhatsApp</strong>
-                        </a> -->
-                    </div>
-                </div>
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <section class="hero is-medium banner1">
+          <div class="is-overlay has-background-dark" style="opacity: 0.4;">
+          </div>
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title is-2 has-text-white">
+                Your Perfect Office Space Awaits
+              </h1>
+              <h2 class="subtitle is-4 mt-3 mb-5 has-text-white">
+                Flexible, modern workspaces designed for productivity and
+                collaboration.
+              </h2>
+              <div class="buttons">
+                <a
+                  href="tel:+17185051531"
+                  class="button is-white is-rounded is-large"
+                  target="_blank"
+                >
+                  <strong>Book Now</strong>
+                </a>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
+          </div>
+        </section>
+      </li>
 
-<style>
+      <li class="splide__slide">
+        <section class="hero is-medium banner2">
+          <div class="is-overlay has-background-dark" style="opacity: 0.4;">
+          </div>
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title is-2 has-text-white">
+                Ideal for Startups or Coworking
+              </h1>
+              <h2 class="subtitle is-4 mt-3 mb-5 has-text-white">
+                Flexible, modern workspaces designed for productivity and
+                collaboration.
+              </h2>
+              <div class="buttons">
+                <a
+                  href="tel:+17185051531"
+                  class="button is-white is-rounded is-large"
+                  target="_blank"
+                >
+                  <strong>Book Now</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </li>
+
+      <li class="splide__slide">
+        <section class="hero is-medium banner3">
+          <div class="is-overlay has-background-dark" style="opacity: 0.5;">
+          </div>
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title is-2 has-text-white">
+                In the best locations of New York City
+              </h1>
+              <h2 class="subtitle is-4 mt-3 mb-5 has-text-white">
+                Flexible, modern workspaces designed for productivity and
+                collaboration.
+              </h2>
+              <div class="buttons">
+                <a
+                  href="tel:+17185051531"
+                  class="button is-white is-rounded is-large"
+                  target="_blank"
+                >
+                  <strong>Book Now</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    import Splide from "@splidejs/splide";
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var splide = new Splide(".splide", {
+        arrows: false,
+        autoplay: true,
+        interval: 4000,
+        rewind: true,
+      });
+      splide.mount();
+    });
+  </script>
+
+  <style>
     .hero {
-        position: relative;
-        background-image: url('/src/images/bg-ny-sky1.webp');
-        background-size: cover;
-        background-position: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner1 {
+      background-image: url("/src/images/bg-ny-sky1.webp");
+    }
+
+    .banner2 {
+      background-image: url("/src/images/bg-ny-sky2.webp");
+    }
+
+    .banner3 {
+      background-image: url("/src/images/bg-ny-sky3.webp");
+      background-position: center 40%;
     }
 
     .hero .is-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
-</style>
+  </style>
+</div>
