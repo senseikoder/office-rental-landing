@@ -17,6 +17,10 @@
   --bulma-title-weight: 600;
 }
 
+.modal {
+  --bulma-modal-content-spacing-mobile: 6rem;
+}
+
 /* Personalización del tema claro */
 .has-background-white-ter {
   background-color: #f5f5f5;

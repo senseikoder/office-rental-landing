@@ -1,39 +1,44 @@
 ---
-import { Icon } from 'astro-icon/components';
-import Image from 'astro/components/Image.astro';
-import modelOffice1 from '../images/model-office1.webp';
-import modelOffice2 from '../images/model-office2.webp';
+import { Icon } from "astro-icon/components";
+import Image from "astro/components/Image.astro";
+import modelOffice1 from "../images/model-office1.webp";
+import modelOffice2 from "../images/model-office2.webp";
 
-import office1 from '../images/office1.jpg';
-import office2 from '../images/office2.jpg';
-import office3 from '../images/office3.jpg';
-import office4 from '../images/office4.jpg';
-import office5 from '../images/office5.jpg';
-import office6 from '../images/office6.jpg';
-import office7 from '../images/office7.jpg';
-import office8 from '../images/office8.jpg';
-import office9 from '../images/office9.jpg';
-import office10 from '../images/office10.jpg';
+import office1 from "../images/office1.webp";
+import office2 from "../images/office2.webp";
+import office3 from "../images/office3.webp";
+import office4 from "../images/office4.webp";
+import office5 from "../images/office5.webp";
+import office6 from "../images/office6.webp";
+import office7 from "../images/office7.webp";
+import office8 from "../images/office8.webp";
+import office9 from "../images/office9.webp";
+import office10 from "../images/office10.webp";
 ---
 
 <section id="offices" class="section has-background-light">
-   <div class="container">
-      <div class="has-text-centered mb-6">
-         <h2 class="title is-2">Explore Our Spaces</h2>
-         <p class="subtitle is-5 has-text-grey">Find the perfect office for your business</p>
-      </div>
+  <div class="container">
+    <div class="has-text-centered mb-6">
+      <h2 class="title is-2">Explore Our Spaces</h2>
+      <p class="subtitle is-5 has-text-grey">
+        Find the perfect office for your business
+      </p>
+    </div>
 
-      <div class="columns is-centered">
-         <div class="column is-4-desktop is-6-tablet">
-            <div class="card">
-               <div class="card-image">
-                  <figure class="image is-4by3">
-                     <Image src={modelOffice1} alt="Private office with modern furniture" />
-                  </figure>
-               </div>
-               <div class="card-content">
-                  <h3 class="title is-4">Private Office</h3>
-                  <!-- <p class="subtitle is-6">
+    <div class="columns is-centered">
+      <div class="column is-4-desktop is-6-tablet is-12-mobile">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <Image
+                src={modelOffice1}
+                alt="Private office with modern furniture"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-4">Private Office</h3>
+            <!-- <p class="subtitle is-6">
                      <span class="icon-text">
                         <span class="icon has-text-primary">
                            <Icon name="tabler:users" />
@@ -47,217 +52,276 @@ import office10 from '../images/office10.jpg';
                         <span>200 sq ft</span>
                      </span>
                   </p> -->
-                  <div class="content">
-                     <p>Fully furnished private office, high-speed internet, and all utilities included.</p>
-                     <div class="tags">
-                        <span class="tag is-primary is-light">Private</span>
-                        <span class="tag is-primary is-light">Furnished</span>
-                        <!-- <span class="tag is-primary is-light">24/7 Access</span> -->
-                     </div>
-                  </div>
-               </div>
-               <footer class="card-footer">
-                  <a href="#contact" class="button is-primary is-light is-fullwidth">View Details</a>
-               </footer>
+            <div class="content">
+              <p>
+                Fully furnished private office, high-speed internet, and all
+                utilities included.
+              </p>
+              <div class="tags">
+                <span class="tag is-primary is-light">Private</span>
+                <span class="tag is-primary is-light">Furnished</span>
+                <!-- <span class="tag is-primary is-light">24/7 Access</span> -->
+              </div>
             </div>
-         </div>
-
-         
-
-         <div class="column is-4-desktop is-6-tablet">
-            <div class="card">
-               <div class="card-image">
-                  <figure class="image is-4by3">
-                     <Image src={modelOffice2} alt="Executive suite with premium furnishings" />
-                  </figure>
-               </div>
-               <div class="card-content">
-                  <h3 class="title is-4">Executive Suite</h3>
-                  <!-- <p class="subtitle is-6">
-                     <span class="icon-text">
-                        <span class="icon has-text-primary">
-                           <Icon name="tabler:users" />
-                        </span>
-                        <span>5-15 people</span>
-                     </span>
-                     <span class="icon-text ml-4">
-                        <span class="icon has-text-primary">
-                           <Icon name="tabler:ruler-2" />
-                        </span>
-                        <span>500-1000 sq ft</span>
-                     </span>
-                  </p> -->
-                  <div class="content">
-                     <p>Premium office suite with reception area, meeting rooms, and executive amenities for growing teams.</p>
-                     <div class="tags">
-                        <span class="tag is-primary is-light">Premium</span>
-                        <span class="tag is-primary is-light">Reception</span>
-                        <span class="tag is-primary is-light">Meeting Rooms</span>
-                     </div>
-                  </div>
-               </div>
-               <footer class="card-footer">
-                  <a href="#contact" class="button is-primary is-light is-fullwidth">View Details</a>
-               </footer>
-            </div>
-         </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#contact" class="button is-primary is-light is-fullwidth"
+              >View Details</a
+            >
+          </footer>
+        </div>
       </div>
 
-      <div class="has-text-centered mt-6">
-         <a href="#contact" class="button is-primary is-rounded is-large has-text-white modal-button">View All Spaces</a>
+      <div class="column is-4-desktop is-6-tablet is-12-mobile">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <Image
+                src={modelOffice2}
+                alt="Executive suite with premium furnishings"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-4">Executive Suite</h3>
+
+            <div class="content">
+              <p>
+                Premium office suite with reception area, meeting rooms, and
+                executive amenities for growing teams.
+              </p>
+              <div class="tags">
+                <span class="tag is-primary is-light">Premium</span>
+                <span class="tag is-primary is-light">Reception</span>
+                <span class="tag is-primary is-light">Meeting Rooms</span>
+              </div>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#contact" class="button is-primary is-light is-fullwidth"
+              >View Details</a
+            >
+          </footer>
+        </div>
       </div>
-   </div>
+    </div>
+
+    <div class="has-text-centered mt-6">
+      <a
+        href="#contact"
+        class="button is-primary is-rounded is-large has-text-white modal-button"
+        >View All Spaces</a
+      >
+    </div>
+  </div>
 </section>
-
-
 
 <!-- Modal de Galería -->
 <div id="galleryModal" class="modal">
-   <div class="modal-background"></div>
-   <div class="modal-content">
-      <div class="box p-0">
-         <div class="gallery-container">
-            <div class="gallery-main">
-               <Image id="mainImage" src={office1} alt="Imagen principal de la oficina" class="main-image" />
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="box p-0">
+      <div class="gallery-container">
+        <div class="gallery-main">
+          <Image
+            id="mainImage"
+            src={office1}
+            alt="Imagen principal de la oficina"
+            class="main-image"
+          />
+        </div>
+        <div class="gallery-thumbnails p-3">
+          <div class="columns is-multiline">
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office1}
+                alt="Oficina 1"
+                class="thumbnail"
+                data-src={office1.src}
+              />
             </div>
-            <div class="gallery-thumbnails p-4">
-               <div class="columns is-multiline">
-                  <div class="column is-3">
-                     <Image src={office1} alt="Oficina 1" class="thumbnail" data-src={office1.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office2} alt="Oficina 2" class="thumbnail" data-src={office2.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office3} alt="Oficina 3" class="thumbnail" data-src={office3.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office4} alt="Oficina 4" class="thumbnail" data-src={office4.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office5} alt="Sala de reuniones" class="thumbnail" data-src={office5.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office6} alt="Área de descanso" class="thumbnail" data-src={office6.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office7} alt="Cocina compartida" class="thumbnail" data-src={office7.src} />
-                  </div>
-                  <div class="column is-3">
-                     <Image src={office8} alt="Sala de juntas" class="thumbnail" data-src={office8.src} />
-                  </div>                 
-               </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office2}
+                alt="Oficina 2"
+                class="thumbnail"
+                data-src={office2.src}
+              />
             </div>
-         </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office3}
+                alt="Oficina 3"
+                class="thumbnail"
+                data-src={office3.src}
+              />
+            </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office4}
+                alt="Oficina 4"
+                class="thumbnail"
+                data-src={office4.src}
+              />
+            </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office5}
+                alt="Sala de reuniones"
+                class="thumbnail"
+                data-src={office5.src}
+              />
+            </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office6}
+                alt="Área de descanso"
+                class="thumbnail"
+                data-src={office6.src}
+              />
+            </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office7}
+                alt="Cocina compartida"
+                class="thumbnail"
+                data-src={office7.src}
+              />
+            </div>
+            <div class="column is-3 is-4-mobile">
+              <Image
+                src={office8}
+                alt="Sala de juntas"
+                class="thumbnail"
+                data-src={office8.src}
+              />
+            </div>
+            <div class="column is-hidden-desktop is-3 is-4-mobile">
+              <Image
+                src={office9}
+                alt="Oficina 9"
+                class="thumbnail"
+                data-src={office9.src}
+              />
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <style>
-   .gallery-container {
-      background: white;
-   }
-   .main-image {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-      transition: opacity 0.2s ease-in-out;
-   }
-   .thumbnail {
-      width: 100%;
-      height: 80px;
-      object-fit: cover;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-   }
-   .thumbnail:hover {
-      transform: scale(1.05);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-   }
+  .gallery-thumbnails .columns {
+    display: flex;
+  }
+  .gallery-container {
+    background: white;
+  }
+  .main-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-   /* Animaciones del modal */
-   .modal {
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      display: flex !important;
-      visibility: hidden;
-   }
+  /* Animaciones del modal */
+  .modal {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex !important;
+    visibility: hidden;
+  }
 
-   .modal.is-active {
-      opacity: 1;
-      visibility: visible;
-   }
+  .modal.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
 
-   .modal-content {
-      transform: translateY(-20px);
-      transition: transform 0.3s ease-out;
-   }
+  .modal-content {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-out;
+  }
 
-   .modal.is-active .modal-content {
-      transform: translateY(0);
-   }
+  .modal.is-active .modal-content {
+    transform: translateY(0);
+  }
 
-   .modal-background {
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-   }
+  .modal-background {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
 
-   .modal.is-active .modal-background {
-      opacity: 1;
-   }
+  .modal.is-active .modal-background {
+    opacity: 1;
+  }
 </style>
 
 <script>
-   document.addEventListener('DOMContentLoaded', () => {
-      // Funcionalidad del Modal
-      const modal = document.getElementById('galleryModal');
-      const modalButtons = document.querySelectorAll('.modal-button');
-      const closeBtn = document.querySelector('.modal-close');
-      const modalBg = document.querySelector('.modal-background');
-      const thumbnails = document.querySelectorAll<HTMLImageElement>('.thumbnail');
-      const mainImage = document.getElementById('mainImage') as HTMLImageElement | null;
+  document.addEventListener("DOMContentLoaded", () => {
+    // Funcionalidad del Modal
+    const modal = document.getElementById("galleryModal");
+    const modalButtons = document.querySelectorAll(".modal-button");
+    const closeBtn = document.querySelector(".modal-close");
+    const modalBg = document.querySelector(".modal-background");
+    const thumbnails =
+      document.querySelectorAll<HTMLImageElement>(".thumbnail");
+    const mainImage = document.getElementById(
+      "mainImage"
+    ) as HTMLImageElement | null;
 
-      // Verificar que los elementos necesarios existan
-      if (!modal || !closeBtn || !modalBg || !mainImage) return;
+    // Verificar que los elementos necesarios existan
+    if (!modal || !closeBtn || !modalBg || !mainImage) return;
 
-      // Abrir modal
-      modalButtons.forEach(btn => {
-         btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.add('is-active');
-            document.documentElement.classList.add('is-clipped');
-         });
+    // Abrir modal
+    modalButtons.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.add("is-active");
+        document.documentElement.classList.add("is-clipped");
       });
+    });
 
-      // Cerrar modal
-      const closeModal = () => {
-         modal.classList.remove('is-active');
-         // Esperar a que termine la animación antes de remover is-clipped
-         setTimeout(() => {
-            document.documentElement.classList.remove('is-clipped');
-         }, 200);
-      };
+    // Cerrar modal
+    const closeModal = () => {
+      modal.classList.remove("is-active");
+      // Esperar a que termine la animación antes de remover is-clipped
+      setTimeout(() => {
+        document.documentElement.classList.remove("is-clipped");
+      }, 200);
+    };
 
-      closeBtn.addEventListener('click', closeModal);
-      modalBg.addEventListener('click', closeModal);
+    closeBtn.addEventListener("click", closeModal);
+    modalBg.addEventListener("click", closeModal);
 
-      // Cambiar imagen principal al hacer clic en miniaturas
-      thumbnails.forEach(thumbnail => {
-         thumbnail.addEventListener('click', () => {
-            const newSrc = thumbnail.getAttribute('data-src');
-            if (newSrc && mainImage) {
-               // Agregar efecto de transición
-               mainImage.style.opacity = '0';
-               
-               // Cambiar la imagen después de que comience la transición
-               setTimeout(() => {
-                  mainImage.src = newSrc;
-                  mainImage.style.opacity = '1';
-               }, 100);
-            }
-         });
+    // Cambiar imagen principal al hacer clic en miniaturas
+    thumbnails.forEach((thumbnail) => {
+      thumbnail.addEventListener("click", () => {
+        const newSrc = thumbnail.getAttribute("data-src");
+        if (newSrc && mainImage) {
+          // Agregar efecto de transición
+          mainImage.style.opacity = "0";
+
+          // Cambiar la imagen después de que comience la transición
+          setTimeout(() => {
+            mainImage.src = newSrc;
+            mainImage.style.opacity = "1";
+          }, 100);
+        }
       });
-   });
+    });
+  });
 </script>
